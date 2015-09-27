@@ -8,7 +8,7 @@ import javax.imageio.ImageIO;
 
 public class ImageToPixel {
 
-	String inputPath = "C:\\Users\\camgu\\Documents\\Gus\\codes\\letterA.jpg";
+	String inputPath = "C:\\Users\\camgu\\Documents\\Gus\\codes\\letterB.bmp";
 
 	public int[] toPixel() {
 		File inputFile = new File(inputPath);
