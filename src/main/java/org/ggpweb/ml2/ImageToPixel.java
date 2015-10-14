@@ -8,14 +8,15 @@ import javax.imageio.ImageIO;
 
 public class ImageToPixel {
 
-	String inputPath = "C:\\Users\\camgu\\Documents\\Gus\\codes\\letterB.bmp";
-
+	String inputPath = "C:\\Users\\camgu\\Documents\\Gus\\codes\\letterA.bmp";
+	BufferedImage inputImage = null;
+			
 	public int[] toPixel() {
 		File inputFile = new File(inputPath);
 		int[] pixels = null;
 		
 		try {
-			BufferedImage inputImage = ImageIO.read(inputFile);
+			inputImage = ImageIO.read(inputFile);
 			int width = inputImage.getWidth();
 			int height = inputImage.getHeight();
 			pixels = new int[width * height];
